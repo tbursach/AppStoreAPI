@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		ABDAA31D251CFDC5005442B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAA31C251CFDC5005442B7 /* AppDelegate.swift */; };
 		ABDAA31F251CFDC5005442B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAA31E251CFDC5005442B7 /* SceneDelegate.swift */; };
-		ABDAA321251CFDC5005442B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAA320251CFDC5005442B7 /* ViewController.swift */; };
 		ABDAA324251CFDC5005442B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABDAA322251CFDC5005442B7 /* Main.storyboard */; };
 		ABDAA326251CFDD3005442B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDAA325251CFDD3005442B7 /* Assets.xcassets */; };
 		ABDAA329251CFDD3005442B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABDAA327251CFDD3005442B7 /* LaunchScreen.storyboard */; };
+		ABDAA33C251D03B4005442B7 /* MusicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAA33B251D03B4005442B7 /* MusicItem.swift */; };
+		ABDAA33F251D0848005442B7 /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAA33E251D0848005442B7 /* AppItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ABDAA319251CFDC5005442B7 /* AppleSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDAA31C251CFDC5005442B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABDAA31E251CFDC5005442B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ABDAA320251CFDC5005442B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABDAA323251CFDC5005442B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABDAA325251CFDD3005442B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABDAA328251CFDD3005442B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABDAA32A251CFDD3005442B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABDAA33B251D03B4005442B7 /* MusicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicItem.swift; sourceTree = "<group>"; };
+		ABDAA33E251D0848005442B7 /* AppItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 		ABDAA31B251CFDC5005442B7 /* AppleSearch */ = {
 			isa = PBXGroup;
 			children = (
+				ABDAA334251D0327005442B7 /* Models */,
+				ABDAA333251D0320005442B7 /* Views */,
+				ABDAA332251D0318005442B7 /* Controllers */,
 				ABDAA331251CFE01005442B7 /* Resources */,
-				ABDAA320251CFDC5005442B7 /* ViewController.swift */,
-				ABDAA322251CFDC5005442B7 /* Main.storyboard */,
 			);
 			path = AppleSearch;
 			sourceTree = "<group>";
@@ -73,6 +76,46 @@
 				ABDAA32A251CFDD3005442B7 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABDAA332251D0318005442B7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ABDAA333251D0320005442B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ABDAA338251D038B005442B7 /* Storyboards */,
+				ABDAA337251D037D005442B7 /* CustomViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ABDAA334251D0327005442B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABDAA33B251D03B4005442B7 /* MusicItem.swift */,
+				ABDAA33E251D0848005442B7 /* AppItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABDAA337251D037D005442B7 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		ABDAA338251D038B005442B7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ABDAA322251CFDC5005442B7 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +188,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABDAA321251CFDC5005442B7 /* ViewController.swift in Sources */,
+				ABDAA33F251D0848005442B7 /* AppItem.swift in Sources */,
+				ABDAA33C251D03B4005442B7 /* MusicItem.swift in Sources */,
 				ABDAA31D251CFDC5005442B7 /* AppDelegate.swift in Sources */,
 				ABDAA31F251CFDC5005442B7 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HB59AGWRUY;
-				INFOPLIST_FILE = AppleSearch/ResourcesInfo.plist;
+				INFOPLIST_FILE = AppleSearch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HB59AGWRUY;
-				INFOPLIST_FILE = AppleSearch/ResourcesInfo.plist;
+				INFOPLIST_FILE = AppleSearch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
